@@ -71,7 +71,8 @@ All queries are written to be **fully reproducible** and aligned with the offici
 > Engagement decline is **not driven by reduced user growth**
 
 **Query**
-- `01_growth.sql`
+- `mysql_src/02_Check_Growth/01_Daily_Signups_All_Users.sql`
+- `mysql_src/02_Check_Growth/02_Daily_Signups_Active_Users.sql`
 
 ---
 
@@ -85,7 +86,7 @@ All queries are written to be **fully reproducible** and aligned with the offici
 > This is primarily a **retention issue**, not a new-user issue
 
 **Query**
-- `02_cohort_engagement.sql`
+- `mysql_src/03_Check_Retention/01_Engagement_by_User_Age_Cohort.sql`
 
 ---
 
@@ -99,7 +100,7 @@ All queries are written to be **fully reproducible** and aligned with the offici
 > The issue is **strongly correlated with mobile usage**, suggesting a mobile app or tracking problem
 
 **Query**
-- `03_device_engagement.sql`
+- `mysql_src/03_Check_Retention/02_WAU_Increase_Rate_by_Device.sql`
 
 ---
 
@@ -118,8 +119,8 @@ Digest emails are intended to bring inactive users back into the product.
 > Digest email performance degradation likely contributes directly to reduced engagement
 
 **Queries**
-- `04_email_open_rate.sql`
-- `05_email_clickthrough_rate.sql`
+- `mysql_src/03_Check_Retention/03_Email_Actions.sql`
+- `mysql_src/03_Check_Retention/04_Open_and_Clickthrough_Rates(CTR).sql`
 
 ---
 
